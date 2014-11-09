@@ -80,8 +80,7 @@ public class Sign_up extends Activity {
                                 Toast.LENGTH_LONG).show();
                     } else {
                         Toast.makeText(getApplicationContext(),
-                                "Sign up Error", Toast.LENGTH_LONG)
-                                .show();
+                                "Sign up Error", Toast.LENGTH_LONG).show();
                     }
                 }
             });
