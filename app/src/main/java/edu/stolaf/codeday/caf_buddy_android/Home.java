@@ -2,6 +2,7 @@ package edu.stolaf.codeday.caf_buddy_android;
 
 import android.app.Activity;
 import android.app.DialogFragment;
+import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,14 +10,23 @@ import android.view.View;
 import android.support.v4.app.FragmentActivity;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TabHost;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
-public class Home extends FragmentActivity implements  AdapterView.OnItemSelectedListener{
+
+public class Home extends FragmentActivity implements  AdapterView.OnItemSelectedListener {
     Spinner spinner;
+    private EditText time_1;
+    private EditText time_2;
+    final Calendar c = Calendar.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +54,24 @@ public class Home extends FragmentActivity implements  AdapterView.OnItemSelecte
         tabSpec2.setIndicator("Create");
         tabHost.addTab(tabSpec2);
 
-
+        time_1 = (EditText)findViewById( R.id.starttime );
+        time_2 = (EditText)findViewById(R.id.endtime);
+        setCurrentDateOnView1();
+        setCurrentDateOnView2();
     }
+
+    public void setCurrentDateOnView1() {
+        String timeFormat = "hh:mm a";
+        SimpleDateFormat stf = new SimpleDateFormat( timeFormat, Locale.US );
+        time_1.setText( stf.format( c.getTime() ) );
+    }
+    public void setCurrentDateOnView2() {
+        String timeFormat = "hh:mm a";
+        SimpleDateFormat stf = new SimpleDateFormat( timeFormat, Locale.US );
+        time_2.setText( stf.format( c.getTime() ) );
+    }
+3
+
     public void onItemSelected(AdapterView<?> parent, View view,
                                int pos, long id) {
         // An item was selected. You can retrieve the selected item using
@@ -67,10 +93,34 @@ public class Home extends FragmentActivity implements  AdapterView.OnItemSelecte
         getMenuInflater().inflate(R.menu.menu_home, menu);
         return true;
     }
-    public void showTimePickerDialog(View v) {
-        DialogFragment newFragment = new TimePickerFragment();
-        newFragment.show(this.getFragmentManager(), "timePicker");
+    TimePickerDialog.OnTimeSetListener time1 = new TimePickerDialog.OnTimeSetListener() {
+        @Override
+        public void onTimeSet( TimePicker view, int hourOfDay, int minute ) {
+            c.set( Calendar.HOUR_OF_DAY, hourOfDay );
+            c.set( Calendar.MINUTE, minute );
+            setCurrentDateOnView1();
+        }
+    };
+
+    public void timeOnClick1(View view){
+        new TimePickerDialog(Home.this,time1,
+                c.get(Calendar.HOUR),c.get(Calendar.MINUTE),false).show();
     }
+    TimePickerDialog.OnTimeSetListener time2 = new TimePickerDialog.OnTimeSetListener() {
+        @Override
+        public void onTimeSet( TimePicker view, int hourOfDay, int minute ) {
+            c.set( Calendar.HOUR_OF_DAY, hourOfDay );
+            c.set( Calendar.MINUTE, minute );
+            setCurrentDateOnView1();
+        }
+    };
+
+    public void timeOnClick2(View view){
+        new TimePickerDialog(Home.this,time2,
+                c.get(Calendar.HOUR),c.get(Calendar.MINUTE),false).show();
+    }
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

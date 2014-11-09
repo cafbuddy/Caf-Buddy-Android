@@ -49,28 +49,6 @@
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentRight="true" />
 
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="showTimePickerDialog"
-                        android:text="Start Time"
-                        android:id="@+id/button1"
-                        android:layout_weight="0"
-                        android:enabled="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_marginBottom="137dp" />
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="showTimePickerDialog"
-                        android:text="End Time"
-                        android:id="@+id/button2"
-                        android:layout_weight="0"
-                        android:enabled="true"
-                        android:layout_alignTop="@+id/button1"
-                        android:layout_alignParentRight="true" />
 
                     <Button
                         android:layout_width="fill_parent"
@@ -78,7 +56,31 @@
                         android:text="Create"
                         android:id="@+id/button3"
                         android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true" />
+                        android:layout_centerHorizontal="true"
+                        android:onClick="create" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/starttime"
+                        android:layout_below="@+id/meals_spinner"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="82dp"
+                        android:onClick="timeOnClick1"
+                        android:editable="false"
+                        android:enabled="true" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/endtime"
+                        android:layout_alignTop="@+id/starttime"
+                        android:layout_alignParentRight="true"
+                        android:onClick="timeOnClick1"
+                        android:editable="false"
+                        android:enabled="true" />
+
 
                 </RelativeLayout>
 

@@ -58,7 +58,7 @@ public class Sign_up extends Activity {
             Toast.makeText(getApplicationContext(),
                     "Please enter a valid St. Olaf email",
                     Toast.LENGTH_LONG).show();
-        }else if(passwordtxt.length() <=8){
+        }else if(passwordtxt.length() <8){
 
             Toast.makeText(getApplicationContext(),
                     "Password must be at least 8 characters",
