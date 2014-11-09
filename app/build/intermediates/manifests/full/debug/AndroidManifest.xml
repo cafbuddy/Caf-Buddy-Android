@@ -28,7 +28,16 @@
         </activity>
         <activity
             android:name="edu.stolaf.codeday.caf_buddy_android.Sign_up"
-            android:label="@string/title_activity_sign_up" >
+            android:label="@string/title_activity_sign_up"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="edu.stolaf.codeday.caf_buddy_android.test"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name="edu.stolaf.codeday.caf_buddy_android.Home"
+            android:label="@string/title_activity_home" >
         </activity>
     </application>
 

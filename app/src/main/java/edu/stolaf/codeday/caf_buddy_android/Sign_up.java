@@ -78,6 +78,9 @@ public class Sign_up extends Activity {
                         Toast.makeText(getApplicationContext(),
                                 "Successfully Signed up, please log in.",
                                 Toast.LENGTH_LONG).show();
+                                 Intent intent = new Intent(getBaseContext(), MainActivity.class);
+                                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                                 startActivity(intent);
                     } else {
                         Toast.makeText(getApplicationContext(),
                                 "Sign up Error", Toast.LENGTH_LONG)

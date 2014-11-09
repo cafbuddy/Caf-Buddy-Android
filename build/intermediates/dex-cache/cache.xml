@@ -2,16 +2,46 @@
 <pre-dex-items>
 
     <item
-        dex="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/pre-dexed/debug/Parse-1.7.1-8f5a330cbe1db424bee40422db82007554b4fc23.jar"
-        jar="/home/a3madkour/git/Caf-Buddy-Android/app/libs/Parse-1.7.1.jar"
+        dex="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/pre-dexed/debug/classes-7bcfb993159abbcd78c1c3f04ea8628d50240ca7.jar"
+        jar="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.1"
-        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528"/>
+        sha1="0c0c19759e5868604a3b4c2c0074ee9404d73c76"/>
     <item
         dex="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-85c61d5cf2d81a708cfa660320177c3403b9b360.jar"
         jar="/home/a3madkour/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7"/>
+    <item
+        dex="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-7526e8e8df60b936c82daf5be0c5e0e2ba8fba36.jar"
+        jar="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0"/>
+    <item
+        dex="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/pre-dexed/debug/classes-d9b4c8ad905784114bf9c66db02ce6d75a453856.jar"
+        jar="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6"/>
+    <item
+        dex="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-2102dc8567fb311b1a423ad55b161e9660ea33d6.jar"
+        jar="/home/a3madkour/Android Workspace/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e"/>
+    <item
+        dex="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/pre-dexed/debug/Parse-1.7.1-8f5a330cbe1db424bee40422db82007554b4fc23.jar"
+        jar="/home/a3madkour/git/Caf-Buddy-Android/app/libs/Parse-1.7.1.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528"/>
+    <item
+        dex="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-a700bcc8505cd98b456de31e805bf05e47a895b3.jar"
+        jar="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.0/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="5a8e01742aee890c56fe638ea7c921b91a3fdc62"/>
 
 </pre-dex-items>

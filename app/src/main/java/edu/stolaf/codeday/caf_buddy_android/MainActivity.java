@@ -49,10 +49,8 @@ public class MainActivity extends Activity {
                     public void done(ParseUser user, ParseException e) {
                         if (user != null) {
                             // If user exist and authenticated, send user to Welcome.class
-                           /* Intent intent = new Intent(
-                                    LoginSignupActivity.this,
-                                    Welcome.class);
-                            startActivity(intent);*/
+                            Intent intent = new Intent(MainActivity.this, Home.class);
+                            startActivity(intent);
                             Toast.makeText(getApplicationContext(),
                                     "Successfully Logged in",
                                     Toast.LENGTH_LONG).show();
@@ -60,8 +58,9 @@ public class MainActivity extends Activity {
                         } else {
                             Toast.makeText(
                                     getApplicationContext(),
-                                    "No such user exist, please signup",
+                                    "Invalid username or password",
                                     Toast.LENGTH_LONG).show();
+
                         }
                     }
                 });
