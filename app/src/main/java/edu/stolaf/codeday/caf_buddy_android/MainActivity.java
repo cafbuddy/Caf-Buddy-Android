@@ -82,11 +82,6 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, Sign_up.class);
         startActivity(intent);
     }
-    public void feed(View view){
-
-        Intent intent = new Intent(this, Feed.class);
-        startActivity(intent);
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
