@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.parse.Parse;
 
 public class MainActivity extends Activity {
 
@@ -12,6 +13,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Parse.initialize(this, "svpARfo8bpZIQjUcEspJWfL75lKsUqSDO08DxpYD", "LPpzy5FqoX2SACc9jrL0cZi4CPaNulPmOelFhS2K");
     }
 
 
