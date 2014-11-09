@@ -83,8 +83,7 @@ public class Sign_up extends Activity {
                                  startActivity(intent);
                     } else {
                         Toast.makeText(getApplicationContext(),
-                                "Sign up Error", Toast.LENGTH_LONG)
-                                .show();
+                                "Sign up Error", Toast.LENGTH_LONG).show();
                     }
                 }
             });

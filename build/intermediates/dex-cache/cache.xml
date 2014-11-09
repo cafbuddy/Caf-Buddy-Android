@@ -2,14 +2,19 @@
 <pre-dex-items>
 
     <item
+<<<<<<< HEAD
         dex="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/pre-dexed/debug/classes-7bcfb993159abbcd78c1c3f04ea8628d50240ca7.jar"
         jar="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.0/classes.jar"
+=======
+        dex="C:\Users\Stephen A\Documents\GitHub\Caf-Buddy-Android\app\build\intermediates\pre-dexed\debug\Parse-1.7.1-40ab496987f788e04e3ffb09246dd2942e21fbe8.jar"
+        jar="C:\Users\Stephen A\Documents\GitHub\Caf-Buddy-Android\app\libs\Parse-1.7.1.jar"
+>>>>>>> 40b87cd64bb8440b7c56a9a45c2c2ac2699aa930
         jumboMode="false"
         revision="21.1.1"
         sha1="0c0c19759e5868604a3b4c2c0074ee9404d73c76"/>
     <item
-        dex="/home/a3madkour/git/Caf-Buddy-Android/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-85c61d5cf2d81a708cfa660320177c3403b9b360.jar"
-        jar="/home/a3madkour/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar"
+        dex="C:\Users\Stephen A\Documents\GitHub\Caf-Buddy-Android\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.2-a0f8bba9ac0af8d3f63c3fcf8739519a1f0351b4.jar"
+        jar="C:\Users\Stephen A\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.2\91c20388c9a45f62b5ed8fe0502bb76ff6251fc7\bolts-android-1.1.2.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7"/>

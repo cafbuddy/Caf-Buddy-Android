@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/home/a3madkour/git/Caf-Buddy-Android/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="meals">
@@ -8,10 +9,13 @@
         <item>Dinner</item>
     </string-array>
     <!-- From: file:/home/a3madkour/git/Caf-Buddy-Android/app/src/main/res/values/dimens.xml -->
+=======
+    <!-- From: file:/C:/Users/Stephen%20A/Documents/GitHub/Caf-Buddy-Android/app/src/main/res/values/dimens.xml -->
+>>>>>>> 40b87cd64bb8440b7c56a9a45c2c2ac2699aa930
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/home/a3madkour/git/Caf-Buddy-Android/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Stephen%20A/Documents/GitHub/Caf-Buddy-Android/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="Login">Login:</string>
     <string name="action_settings">Settings</string>
@@ -30,7 +34,7 @@
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
     <string name="username">Username:</string>
-    <!-- From: file:/home/a3madkour/git/Caf-Buddy-Android/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Stephen%20A/Documents/GitHub/Caf-Buddy-Android/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->

@@ -11,12 +11,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
+import com.parse.FunctionCallback;
 import com.parse.LogInCallback;
 import com.parse.Parse;
+import com.parse.ParseCloud;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
+
+import java.util.HashMap;
 
 public class MainActivity extends Activity {
     private EditText username=null;
@@ -37,6 +40,14 @@ public class MainActivity extends Activity {
         ParseObject test = new ParseObject("Test");
         test.put("asda","asdas");
         test.saveInBackground();
+
+        ParseCloud.callFunctionInBackground("test", new HashMap<String, Object>(), new FunctionCallback<String>() {
+            public void done(String result, ParseException e) {
+                if (e == null) {
+                    Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
     public void login(View view){
         // Retrieve the text entered from the EditText
@@ -67,9 +78,9 @@ public class MainActivity extends Activity {
     }
    public void signup(View view){
 
-       Intent intent = new Intent(this, Sign_up.class);
-       startActivity(intent);
-   }
+        Intent intent = new Intent(this, Sign_up.class);
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
